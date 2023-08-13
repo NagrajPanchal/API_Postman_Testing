@@ -1,0 +1,75 @@
+{
+	"id": "69c1b2af-1beb-442f-8bbd-948255e3f4a5",
+	"values": [
+		{
+			"key": "Token",
+			"value": "Bearer BQCAKooAhkhgBBYbMIjGBZ6p5DaWgtouNxe_HsbHwhG3ClUcuN0J1AxcU5Rpw-C76cPmhnHb2xX16fbAUrCxtXnK8OB-UtaNeVNWpm7i2CIIOFeF3WE2QD6gQ4FOtnlDuJIX-4EZK8fais90PrTb6E5mNz8dunS09j6vZskXojzEQ41dsL-18jdRzK4c-uTwUIXZxh9NNg&token_type=Bearer&expires_in=3600",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "MyId",
+			"value": "31qttizveizts3pqmixcdu3gq5ye",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "DBLink",
+			"value": "http://localhost:3000",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "PlayListId",
+			"value": "0clrBVbW1r1iY2ke6oLLHw",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "KannadaSongs",
+			"value": "4hHBt6Eg8NQGF77nF2Duzp",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "MarathiSongs",
+			"value": "1cWSX5i13Vrf6KSxFvpK4B",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "HindiSongs",
+			"value": "6BbEcngnknqbgNdAXr2QU7",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Cat_Bollywood",
+			"value": "0JQ5DAqbMKFHCxg5H5PtqW",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Playlistid1",
+			"value": "5xWndADWSkca4c0YvmOMHc",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "USER_ID",
+			"value": "31qttizveizts3pqmixcdu3gq5ye",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "DBLinks",
+			"value": "http://localhost:3000",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2023-07-12T11:11:23.159Z",
+	"_postman_exported_using": "Postman/10.15.4"
+}

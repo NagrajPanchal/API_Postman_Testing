@@ -1,0 +1,392 @@
+{
+	"info": {
+		"_postman_id": "393671cb-9416-436b-a02e-83763cbf3bcb",
+		"name": "PetstoreDBServer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16462086"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "feachUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\":\"6\",\r\n\"username\":\"Prabu\",\r\n\"firstName\":\"Aku\",\r\n\"lastName\":\"Cholkar\",\r\n\"email\":\"AkashCholakar@gmail.com\",\r\n\"password\":\"Aku\",\r\n\"phone\":\"6265666528\",\r\n\"userStatus\":\"1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DBLink}}/user",
+							"host": [
+								"{{DBLink}}"
+							],
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "NagrajPanchal",
+									"disabled": true
+								},
+								{
+									"key": "firstName",
+									"value": "Nagraj",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Panchal",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "nagrajsubhashpanchal@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "nagraj",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "9739713842",
+									"disabled": true
+								},
+								{
+									"key": "userStatus",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"id\": \"5\",\r\n      \"username\": \"PrabhuSuvarnakar\",\r\n      \"firstName\": \"Prabhu\",\r\n      \"lastName\": \"Suvarnakar\",\r\n      \"email\": \"PrabhuSuvarnakar@gmail.com\",\r\n      \"password\": \"PrabhuSuvarnakar\",\r\n      \"phone\": \"143143143\",\r\n      \"userStatus\": \"1\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DBLink}}/user/3",
+							"host": [
+								"{{DBLink}}"
+							],
+							"path": [
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Store",
+			"item": [
+				{
+					"name": "StoreDetails",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{DBLink}}/store",
+							"host": [
+								"{{DBLink}}"
+							],
+							"path": [
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add pet in store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"id\": 4,\r\n      \"petId\": 2,\r\n      \"quantity\": 1,\r\n      \"shipDate\": \"2023-01-20T10:35:29.794Z\",\r\n      \"status\": \"placed\",\r\n      \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/store",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveStore",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/store/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"store",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateStoreDetails",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"id\": 3,\r\n      \"petId\": 2,\r\n      \"quantity\": 1,\r\n      \"shipDate\": \"2023-01-20T10:35:29.794Z\",\r\n      \"status\": \"placed\",\r\n      \"complete\": true\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{DBLink}}/store/3",
+							"host": [
+								"{{DBLink}}"
+							],
+							"path": [
+								"store",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pet",
+			"item": [
+				{
+					"name": "AddPets",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 4,\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"Mudhol\"\r\n        },\r\n        \"name\": \"doggie\",\r\n        \"photoUrls\": [\r\n            \"C:/Users/user/Downloads/unnamed.jpg\"\r\n        ],\r\n        \"tags\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"Gold\"\r\n            }\r\n        ],\r\n        \"status\": \"available\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/pet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePetDetails",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"category\": {\r\n            \"id\": 3,\r\n            \"name\": \"Black-dog\"\r\n        },\r\n        \"name\": \"panthor\",\r\n        \"photoUrls\": [\r\n            \"C:/Users/user/Downloads/unnamed.jpg\"\r\n        ],\r\n        \"tags\": [\r\n            {\r\n                \"id\": 1,\r\n                \"name\": \"Diamand\"\r\n            }\r\n        ],\r\n        \"status\": \"available\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/pet/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemovePets",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/pet/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PetDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/pet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PetImage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PetId\":1,\r\n    \"additionalMetadata\":\"My Pet\",\r\n    \"file\":\"C:\\Users\\user\\Desktop\\Qapitol\\photo\\JaiShivaji.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/1/uploadImage",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"1",
+								"uploadImage"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
